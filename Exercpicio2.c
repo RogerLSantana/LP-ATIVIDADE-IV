@@ -31,8 +31,8 @@ int main()
 {
     
     struct Aluno alunos[5];
-
-    for (int i = 0; i < 5; ++i)
+int i;
+    for ( i = 0; i < 5; ++i)
     {
         printf("Forneça os dados do aluno:\n");
 
@@ -56,7 +56,7 @@ system("cls || clear");
 
 
     // Exibindo os resultados
-    for (int i = 0; i < 5; ++i)
+    for ( i = 0; i < 5; ++i)
     {
         printf("Aluno: %s\n", alunos[i].nome);
         printf("Média: %.2f\n", alunos[i].media);
