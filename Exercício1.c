@@ -40,11 +40,11 @@ int main()
     for (i = 0; i < 3; i++)
     {
 
-        printf("Digite o nome do  %d° contato: ", i + 1);
+        printf("Digite o nome do  %dÂ° contato: ", i + 1);
         scanf("%s", contatos[i].nome);
-        printf("Digite o número do %d° contato: ", i + 1);
+        printf("Digite o nÃºmero do %dÂ° contato: ", i + 1);
         scanf("%s", contatos[i].numero);
-        printf("Digite o email do %d° contato:", i + 1);
+        printf("Digite o email do %dÂ° contato:", i + 1);
         scanf("%s", contatos[i].email);
     }
 
@@ -52,14 +52,14 @@ int main()
     {
         printf("Agenda:\n");
 
-        printf("\nDigite o nome do contato para buscar o número de telefone: ");
+        printf("\nDigite o nome do contato para buscar o nÃºmero de telefone: ");
         scanf("%s", nomePesquisado);
 
         char *numeroEncontrado = buscarTelefone(contatos, 3, nomePesquisado);
 
         if (numeroEncontrado != "Contato inexistente")
         {
-            printf("Número de telefone de %s: %s\n", nomePesquisado, numeroEncontrado);
+            printf("NÃºmero de telefone de %s: %s\n", nomePesquisado, numeroEncontrado);
         }
         else
         {
@@ -72,5 +72,6 @@ int main()
 
     } while (codigo != 2);
 
+    getchar();
     return 0;
 }
