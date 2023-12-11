@@ -5,7 +5,7 @@
 #include <ctype.h>
 #include <time.h>
 
-// Definição da struct ContaBancaria
+
 struct ContaBancaria
 {
     int numeroConta;
@@ -14,14 +14,13 @@ struct ContaBancaria
     char tipoConta[200];
 };
 
-// Função para depositar dinheiro na conta
+
 void depositar(struct ContaBancaria *conta, float valor)
 {
     conta[0].saldo += valor;
     printf("Depósito de R$%.2f realizado com sucesso.\n", valor);
 }
 
-// Função para sacar dinheiro da conta
 void sacar(struct ContaBancaria *conta, float valor)
 {
     if (valor <= conta[0].saldo)
@@ -35,7 +34,7 @@ void sacar(struct ContaBancaria *conta, float valor)
     }
 }
 
-// Função para imprimir o saldo atual da conta
+
 void imprimirSaldo(struct ContaBancaria *conta)
 {
     printf("Saldo atual da conta: R$%.2f\n", conta->saldo);
@@ -55,7 +54,7 @@ int main()
     minhaConta.saldo = 1000.00;
     strcpy(minhaConta.tipoConta, "Corrente");
 
-    // Menu de operações
+   
 
     do
     {
