@@ -38,7 +38,7 @@ float calcularMediaSalarial(struct Funcionario funcionarios[], int numFuncionari
 
 int main()
 {
-
+    setlocale(LC_ALL, "portuguese");
     struct Funcionario programadores[200];
 
     int numFuncionarios = 0;
