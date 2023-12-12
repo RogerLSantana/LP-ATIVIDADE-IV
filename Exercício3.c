@@ -12,13 +12,16 @@ struct Produto
     int quantidadeEmEstoque;
 };
 
-// Função para calcular o valor total em estoque
+void limpatela()
+{
+    system("cls||Clear");
+}
+
 float calcularValorTotal(struct Produto *produto)
 {
     return produto[0].preco * produto[0].quantidadeEmEstoque;
 }
 
-// Função para realizar uma compra e atualizar o estoque
 void realizarCompra(struct Produto *produto)
 {
     int quantidadeComprada;
@@ -36,7 +39,7 @@ void realizarCompra(struct Produto *produto)
     }
 }
 
-// Função para consultar o estoque
+
 void consultarEstoque(struct Produto *produto)
 {
     printf("Nome: %s\n", produto[0].nome);
@@ -55,6 +58,7 @@ int main()
     printf(meuProduto.nome, "Produto Elástico");
     meuProduto.preco = 10.99;
     meuProduto.quantidadeEmEstoque = 5000;
+    limpatela();
 
     do
     {
@@ -65,6 +69,8 @@ int main()
         printf("3 - Sair do programa\n");
         printf("Escolha a opção: ");
         scanf("%d", &opcao);
+        
+        limpatela();
 
         switch (opcao)
         {
