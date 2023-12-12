@@ -29,7 +29,7 @@ char *verificarAprovacao(struct Aluno *aluno)
 
 int main()
 {
-    
+setlocale(LC_ALL, "portuguese");
     struct Aluno alunos[5];
 int i;
     for ( i = 0; i < 5; ++i)
