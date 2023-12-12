@@ -11,6 +11,11 @@ struct Contato
     char email[200];
 };
 
+void limpatela()
+{
+    system("cls||Clear");
+}
+
 char *buscarTelefone(struct Contato contatos[], int tamanho, char *nome)
 {
 
@@ -50,6 +55,7 @@ int main()
 
     do
     {
+        limpatela();
         printf("Agenda:\n");
 
         printf("\nDigite o nome do contato para buscar o número de telefone: ");
