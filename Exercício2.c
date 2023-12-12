@@ -15,6 +15,10 @@ struct Aluno
     float media;
 };
 
+void limpatela()
+{
+    system("cls||Clear");
+}
 
 float calcularMedia(struct Aluno *aluno)
 {
@@ -52,7 +56,7 @@ int i;
         printf("---------------------------\n");
     }
 
-system("cls || clear");
+    limpatela();
 
 
     // Exibindo os resultados
