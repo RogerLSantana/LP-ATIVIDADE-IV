@@ -25,7 +25,7 @@ void realizarCompra(struct Produto *produto)
     printf("Digite a quantidade a ser comprada: ");
     scanf("%d", &quantidadeComprada);
 
-    if (quantidadeComprada > 0 && quantidadeComprada <= produto->quantidadeEmEstoque)
+    if (quantidadeComprada > 0 && quantidadeComprada <= produto[0].quantidadeEmEstoque)
     {
         produto[0].quantidadeEmEstoque -= quantidadeComprada;
         printf("Compra realizada com sucesso!\n");
@@ -52,9 +52,9 @@ int main()
     struct Produto meuProduto;
     int opcao;
 
-    printf(meuProduto.nome, "Produto A");
+    printf(meuProduto.nome, "Produto Elástico");
     meuProduto.preco = 10.99;
-    meuProduto.quantidadeEmEstoque = 50;
+    meuProduto.quantidadeEmEstoque = 5000;
 
     do
     {
