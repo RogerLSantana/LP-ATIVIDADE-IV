@@ -14,6 +14,10 @@ struct ContaBancaria
     char tipoConta[200];
 };
 
+void limpatela()
+{
+    system("cls||Clear");
+}
 
 void depositar(struct ContaBancaria *conta, float valor)
 {
@@ -66,6 +70,8 @@ int main()
         printf("Escolha a operação desejada: ");
         scanf("%d", &escolha);
 
+        limpatela();
+        
         switch (escolha)
         {
         case 1:
