@@ -59,6 +59,7 @@ int main()
         case 1:
             if (numFuncionarios < 10)
             {
+                system("cls || clear");
                 printf("Digite o nome do programador %d: ", numFuncionarios + 1);
                 scanf("%s", programadores[numFuncionarios].nome);
 
@@ -76,6 +77,7 @@ int main()
         case 2:
             if (numFuncionarios > 0)
             {
+                system("cls || clear");
                 printf("Digite o cargo para calcular a media salarial: ");
                 scanf("%s", cargoAlvo);
 
