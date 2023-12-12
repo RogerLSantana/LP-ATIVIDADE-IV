@@ -102,5 +102,6 @@ int main()
 
     } while (escolha != 2);
 
+    getchar();
     return 0;
 }
